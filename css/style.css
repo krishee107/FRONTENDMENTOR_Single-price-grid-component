@@ -53,7 +53,7 @@ main{
 /* Monthly*/
 #monthly{
     background-color: var(--color1);
-    padding: 4%;
+    padding: 5% 7%;
 }
 #price {
     display: flex;
@@ -67,13 +67,32 @@ main{
 }
 
 .month {
-    color: lightgray;
     font-weight: 400;
+    color: lightgray;
+}
+#btnSignUp{
+    background-color: var(--color2);
+    text-align: center;
+    padding: 5%;
+    border-radius: 5px;
 }
 
 /* WhyUs*/
 #whyUs{
     background-color: var(--color5);
-    padding: 4%;
+    padding: 5% 7%;
 }
 
+#whyUs p {
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+@media (max-width: 600px){
+    main {
+        width: 85%;
+    }
+    #priceChart {
+        display: unset;
+    }
+}
