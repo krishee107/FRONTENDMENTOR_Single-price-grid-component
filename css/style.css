@@ -1,0 +1,79 @@
+/* General */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    --color1:hsl(179, 62%, 43%);
+    --color2:hsl(71, 73%, 54%);
+    --color3:hsl(204, 43%, 93%);
+    --color4:hsl(218, 22%, 67%);
+    --color5:hsl(179deg 57% 51%);
+}
+
+html, body {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+} 
+
+body{
+    background-color: var(--color3);
+    font-family: 'Karla', sans-serif;
+}
+
+h1{color: var(--color1);}
+h2{color: var(--color2);}
+h3{color: var(--color4);}
+p{color: var(--color4);}
+
+/* Contenedor principal */
+
+main{
+    background-color: white;
+    display: grid;
+    border-radius: 20px;
+    width: 50%;
+    overflow: hidden;
+}
+#join {padding: 4%;}
+
+/* Precios */
+#priceChart {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white !important;
+}
+#priceChart h1,#priceChart h2,#priceChart h3, #priceChart p{
+    color: white !important;
+}
+
+/* Monthly*/
+#monthly{
+    background-color: var(--color1);
+    padding: 4%;
+}
+#price {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.month {
+    color: lightgray;
+    font-weight: 400;
+}
+
+/* WhyUs*/
+#whyUs{
+    background-color: var(--color5);
+    padding: 4%;
+}
+
